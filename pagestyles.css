@@ -1,0 +1,257 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  scroll-behavior: smooth;
+  font-family: 'Poiret One', cursive;
+  display: flex; /* Add display flex */
+  justify-content: center; /* Add justify-content center */
+  align-items: center; /* Add align-items center */
+}
+
+.contact-info {
+  text-align: center;
+  margin-top: 50px; /* Adjust this value to add some spacing between image and text */
+  font-family: 'Poiret One', cursive;
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+
+h1 {
+  margin-top: 30px;
+  font-size: 24px;
+}
+
+.industry-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 16px;
+  justify-content: center;
+  align-items: center;
+  row-gap: 40px;
+  left: 20%;
+  right: 20%;
+  top: 100px;
+  bottom: 100px;
+  grid-auto-flow: column;
+}
+
+.industry-img {
+  width: 100%;
+  height: auto;
+  padding: 40px;
+}
+
+.industry-info {
+  text-align: center;
+  font-family: 'Poiret One', cursive;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.industry-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensure it takes up the full viewport height */
+}
+
+.labels {
+  text-align: center;
+  font-family: 'Poiret One', cursive;
+  font-size: 40px; /* Adjust the font size as needed */
+  font-weight: 600;
+  letter-spacing: 15px;
+}
+
+.logo-container {
+  margin-top: 25px;
+
+  display: flex; /* Add display flex */
+  justify-content: center; /* Add justify-content center */
+  align-items: center; /* Add align-items center */
+}
+
+.logo {
+  width: 100%; /* Make sure the image fills the container */
+  height: 50%; /* Make sure the image fills the container */
+
+}
+
+.pic-container {
+  margin-top: 150px;
+  width: 200px;
+  height: 200px;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+}
+
+p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+.sidebar {
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+  z-index: 1;
+}
+
+/* Styling for the scrollbar */
+#scrollbar {
+  display: block;
+  height: 100%; /* Adjust this value to your preference */
+  width: 2px;
+  background-color: #888;
+  position: absolute;
+  top: 20; /* Adjust this value to vertically position the scrollbar */
+  right: 20px;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.scrolllabel.active {
+  font-weight: bold;
+}
+
+/* Styling for the scroll labels */
+.scrolllabel {
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1;
+  margin-right: -25px;
+  font-size: 20px;
+  font-family: 'Poiret One', sans-serif;
+  font-weight: 800;
+}
+
+.scrolllabel:hover {
+  font-weight: 700;
+}
+
+.scrolllabel:active {
+  font-weight: 700;
+}
+
+.scrolllabel:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.syn-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.syn-text-box {
+  flex: 5.5;
+  height: 100%;
+}
+
+.syn-text {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+  position: absolute; 
+  padding-left: 25px;
+}
+
+.syn-img {
+  background-color: lightcoral;
+  flex: 4.5;
+  height: 100%;
+  border: black solid 2px;
+}
+
+.team-grid1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 16px;
+  justify-content: center;
+  align-items: center;
+  grid-auto-flow: column;
+}
+
+
+.team-grid1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 80px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 125px;
+  grid-auto-flow: column;
+}
+
+.team-grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 80px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  grid-auto-flow: column;
+}
+
+.team-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-container {
+  width: 200px; /* Set the width of the container */
+  height: 200px; /* Set the height of the container */
+  border-radius: 50%;
+  overflow: hidden; /* Hide the overflowing part of the image */
+  border: 1.5px black solid;
+}
+
+.team-text1 {
+  text-align: center;
+  margin-top: 10px; /* Adjust this value to add some spacing between image and text */
+  font-family: 'Poiret One', cursive;
+  font-size: 30px; /* Adjust the font size as needed */
+  font-weight: 600;
+}
+
+.team-text2 {
+  text-align: center;
+  margin-top: 10px; /* Adjust this value to add some spacing between image and text */
+  font-family: 'Roboto', sans-serif;
+  font-size: 19px; /* Adjust the font size as needed */
+  font-weight: 900;
+}
+
+
