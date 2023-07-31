@@ -40,21 +40,17 @@ h1 {
 .industry-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 16px;
   justify-content: center;
   align-items: center;
-  row-gap: 40px;
-  left: 20%;
-  right: 20%;
-  top: 100px;
+  grid-gap: 100px;
   bottom: 100px;
   grid-auto-flow: column;
 }
 
 .industry-img {
-  width: 100%;
+  height: 100%;
   height: auto;
-  padding: 40px;
+  padding: 20px;
 }
 
 .industry-info {
@@ -95,10 +91,13 @@ h1 {
 
 .pic-container {
   margin-top: 150px;
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   background-color: #f1f1f1;
   border-radius: 50%;
+  background-image: url("IndustryPhotos/using-mycelium-to-crea.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 p {
@@ -169,6 +168,7 @@ section {
 .syn-container {
   display: flex;
   flex-direction: row;
+  background-color: #f1f1f1;
 }
 
 .syn-text-box {
@@ -179,7 +179,7 @@ section {
 .syn-text {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center;
   justify-content: center;
   height: 100%;
   width: 50%;
@@ -253,5 +253,6 @@ section {
   font-size: 19px; /* Adjust the font size as needed */
   font-weight: 900;
 }
+
 
 
